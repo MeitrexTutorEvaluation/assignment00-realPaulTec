@@ -36,7 +36,7 @@ public class Main {
      */
     public static int factorial(int n) {
         // your code here
-        long result = 1;
+        int result = 1;
         for (int i = 2; i <= n; i++) {
             result *= i;
         }
