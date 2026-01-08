@@ -12,7 +12,7 @@ public class Main {
      */
     public static int add(int a, int b) {
         // your code here
-        return 0;
+        return a + b;
     }
 
     /**
@@ -20,7 +20,7 @@ public class Main {
      */
     public static int subtract(int a, int b) {
         // your code here
-        return 0;
+        return a - b;
     }
 
     /**
@@ -28,7 +28,7 @@ public class Main {
      */
     public static int multiply(int a, int b) {
         // your code here
-        return 0;
+        return a * b;
     }
 
     /**
@@ -36,6 +36,7 @@ public class Main {
      */
     public static int factorial(int n) {
         // your code here
-        return 0;
+        return LongStream.rangeClosed(1, n)
+            .reduce(1, (long x, long y) -> x * y);;
     }
 }
